@@ -1,0 +1,17 @@
+name: BlockPlay
+main: xyz.caibin.blockplay.BlockPlay
+version: "1.0.0"
+api: ["1.0.8"]
+
+author: Champrin
+description: "BlockPlay 方块华容道!"
+
+commands:
+  bplay:
+    permission: BlockPlay.command.op
+    usage: "/bplay"
+    description: "§eBlockPlay Helper"
+    aliases: []
+permissions:
+  BlockPlay.command.op:
+    default: op
