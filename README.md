@@ -1,6 +1,7 @@
 # BlockPlay
-Nukkit Plugin BlockPlay——方块华容道
-插件使用GPL-3.0开源协议,详情百度,转载需授权
+
+    Nukkit Plugin BlockPlay——方块华容道
+    插件使用GPL-3.0开源协议,详情百度,转载需授权
 
 <> 功能介绍
 
