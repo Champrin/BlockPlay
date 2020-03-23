@@ -34,7 +34,7 @@ public class Room implements Listener {
     }
 
     public ArrayList<Integer> layout = new ArrayList<>(Arrays.asList(14, 1, 4, 5, 13, 9, 3, 11));
-
+    public ArrayList<Integer> checkLayout = new ArrayList<>(Arrays.asList(14, 1, 4, 5, 13, 9, 3, 11,0));
     @EventHandler
     public void onTouch(PlayerInteractEvent event) {
         if (this.game != 1) return;
@@ -139,7 +139,7 @@ public class Room implements Listener {
                 break;
             }
         }
-        if (this.layout.equals(check)) {
+        if (this.checkLayout.equals(check)) {
             this.finish = true;
         }
     }
@@ -216,11 +216,9 @@ public class Room implements Listener {
         setStartArena_NumPLAY();
     }
 
-
     public void setStartArena_NumPLAY() {
         ArrayList<Integer> layout = new ArrayList<>(Arrays.asList(14, 1, 4, 5, 13, 9, 3, 11));
         Collections.shuffle(layout);
-
         String direction = (String) this.data.get("direction");
         String[] p1 = ((String) this.data.get("pos1")).split("\\+");
         String[] p2 = ((String) this.data.get("pos2")).split("\\+");
@@ -282,7 +280,6 @@ public class Room implements Listener {
             }
         }
     }
-
 
     public void startGame() {
         this.game = 1;
